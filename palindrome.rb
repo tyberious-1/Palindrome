@@ -1,13 +1,14 @@
+
 class Palindrome
 
 
-def wordCheck
+def wordCheck # method to check words
 	puts "Please enter text to see if a string is a Palindrome"
-	words = gets.chomp
-	arrayOfWords = words.split
-	arrayOfWords = arrayOfWords.compact
+	words = gets.chomp  # gets string from user
+	arrayOfWords = words.split # turns words in to a array example "mom" = ['m','o','m']
+	arrayOfWords = arrayOfWords.compact # removes any nil data
 	
-	if arrayOfWords == arrayOfWords.reverse
+	if arrayOfWords == arrayOfWords.reverse # compares the two arrays one gets reversed.
 		puts "is a Palindrome"
 	else
 		puts "not a Palindrome"
@@ -19,5 +20,7 @@ end # method
 
 end # class
 
-test = Palindrome.new
-test.wordCheck
+test = Palindrome.new  # new Palindrome object
+
+test.wordCheck  # Palindrome method call.
+
